@@ -55,7 +55,7 @@ export default function Verse({
 
             <HeaderWeb
               page="surah"
-              // chapters={chapters}
+              chapters={chapters}
               // isChapterPage={true}
               // searchModalController={searchModalController}
             />
