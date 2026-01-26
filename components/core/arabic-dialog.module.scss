@@ -1,0 +1,21 @@
+.paper {
+  background-color: var(--bg11) !important;
+}
+
+.title,
+.title h2 {
+  color: var(--txt11);
+  font-family: "Kalpurush", sans-serif;
+}
+
+.desc {
+  color: var(--txt13) !important;
+  font-family: "Kalpurush", sans-serif !important;
+}
+
+.btn {
+  color: var(--main-color) !important;
+  text-transform: initial !important;
+  //background-color: #F5F5F5 !important;
+  font-family: "Kalpurush", sans-serif !important;
+}

@@ -1,0 +1,63 @@
+.banner {
+  display: none;
+}
+
+// mobile banner
+.banner_mobile {
+  display: block;
+  padding: 40px 0;
+  background: #3134de;
+  // background: linear-gradient(
+  //   90deg,
+  //   #be7af8 0%,
+  //   #3134de 33%,
+  //   #3134de 66%,
+  //   #be7af8 100%
+  // );
+  background: linear-gradient(
+    90deg,
+    var(--hbnc1) 0%,
+    var(--hbnc2) 50%,
+    var(--hbnc2) 50%,
+    var(--hbnc1) 100%
+  );
+  text-align: center;
+}
+
+.banner_mobile .banner_link {
+  color: #fff;
+  font-size: 16px;
+}
+
+@media only screen and (min-width: 1024px) {
+  .banner_mobile {
+    display: none;
+  }
+
+  .banner {
+    display: block;
+    padding-top: 110px;
+  }
+
+  .calligraphy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+
+  .title h1 {
+    color: var(--main-color);
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    font-family: "AponaLohit";
+  }
+
+  .title p {
+    color: var(--main-color);
+    font-size: 20px;
+    text-align: center;
+    font-family: "AponaLohit";
+  }
+}
