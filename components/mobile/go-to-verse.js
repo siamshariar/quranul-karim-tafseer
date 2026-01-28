@@ -52,14 +52,14 @@ export default function GoToVerse({ open, controller, chapters }) {
   const handleClick = (e) => {
     e.preventDefault();
 
-    // const href =
-    //   verseMode === "scroll"
-    //     ? `/chapters/${chapters[chapterNumber - 1].slug}#verse-${verseNumber}`
-    //     : verseMode === "slide"
-    //     ? `/chapters/${chapters[chapterNumber - 1].slug}/verses/${verseNumber}`
-    //     : `/chapters/${chapters[chapterNumber - 1].slug}#verse-${verseNumber}`;
+    const href =
+      verseMode === "scroll"
+        ? `/chapters/${chapters[chapterNumber - 1].slug}#verse-${verseNumber}`
+        : verseMode === "slide"
+        ? `/chapters/${chapters[chapterNumber - 1].slug}/verses/${verseNumber}`
+        : `/chapters/${chapters[chapterNumber - 1].slug}#verse-${verseNumber}`;
 
-    const href = `/chapters/${chapters[chapterNumber - 1].slug}#verse-${verseNumber}`;
+    // const href = `/chapters/${chapters[chapterNumber - 1].slug}#verse-${verseNumber}`;
 
     controller(false)(e);
     router.push(href);

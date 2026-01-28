@@ -19,12 +19,11 @@ export default function PinList() {
             <div key={item.chapter} className={styles.item}>
               <Link
                 href={
-                  // verseMode === "scroll"
-                  //   ? `/chapters/${item.slug}#verse-${item.verse}`
-                  //   : verseMode === "slide"
-                  //   ? `/chapters/${item.slug}/verses/${item.verse}`
-                  //   : `/chapters/${item.slug}#verse-${item.verse}`
-                  `/chapters/${item.slug}#verse-${item.verse}`
+                  verseMode === "scroll"
+                    ? `/chapters/${item.slug}#verse-${item.verse}`
+                    : verseMode === "slide"
+                    ? `/chapters/${item.slug}/verses/${item.verse}`
+                    : `/chapters/${item.slug}#verse-${item.verse}`
                 }
                 legacyBehavior>
                 <a className={styles.link}>

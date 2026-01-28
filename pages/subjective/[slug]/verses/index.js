@@ -99,7 +99,7 @@ export async function getStaticProps(context) {
       subjective,
       key: slug,
     },
-    revalidate: 60,
+    revalidate: 2592000, // 30 days
   };
 }
 

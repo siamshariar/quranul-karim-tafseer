@@ -14,14 +14,14 @@ export default function LastReadList({ controller }) {
   const handleClick = (e, slug, verse) => {
     e.preventDefault();
 
-    // const href =
-    //   verseMode === "scroll"
-    //     ? `/chapters/${slug}#verse-${verse}`
-    //     : verseMode === "slide"
-    //     ? `/chapters/${slug}/verses/${verse}`
-    //     : `/chapters/${slug}#verse-${verse}`;
+    const href =
+      verseMode === "scroll"
+        ? `/chapters/${slug}#verse-${verse}`
+        : verseMode === "slide"
+        ? `/chapters/${slug}/verses/${verse}`
+        : `/chapters/${slug}#verse-${verse}`;
 
-    const href = `/chapters/${slug}#verse-${verse}`;
+    // const href = `/chapters/${slug}#verse-${verse}`;
 
     controller(false)(e);
     router.push(href);

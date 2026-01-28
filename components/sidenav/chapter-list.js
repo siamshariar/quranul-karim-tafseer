@@ -65,12 +65,11 @@ export default function ChapterList({ chapterList, open, controller }) {
               {/* To Do: update link with verse mode */}
               <Link
                 href={
-                  // verseMode === "scroll"
-                  //   ? `/chapters/${chapter.slug}`
-                  //   : verseMode === "slide"
-                  //   ? `/chapters/${chapter.slug}/verses/1`
-                  //   : `/chapters/${chapter.slug}`
-                  `/chapters/${chapter.slug}`
+                  verseMode === "scroll"
+                    ? `/chapters/${chapter.slug}`
+                    : verseMode === "slide"
+                    ? `/chapters/${chapter.slug}/verses/1`
+                    : `/chapters/${chapter.slug}`
                 }
                 legacyBehavior>
                 <a onClick={controller(false)}>

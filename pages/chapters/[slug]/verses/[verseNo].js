@@ -130,7 +130,7 @@ export async function getStaticProps(context) {
       chapters: chaptersInfo,
       key: uniqueKey(chapterNo, verseNo),
     },
-    revalidate: 60,
+    revalidate: 2592000, // 30 days
   };
 }
 

@@ -116,7 +116,7 @@ export async function getStaticProps(context) {
       chapters: chaptersInfo,
       key: chapterDetails.chapterNo,
     },
-    revalidate: 86400, // revalidate every 24 hours
+    revalidate: 2592000, // 30 days
   };
 }
 

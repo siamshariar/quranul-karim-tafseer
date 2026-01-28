@@ -7,14 +7,14 @@ import styles from "./chapter-card.module.scss";
 export default function ChapterCard({ chapter }) {
   const { verseMode } = useContext(SettingsContext);
 
-  // const link =
-  //   verseMode === "scroll"
-  //     ? `/chapters/${chapter.slug}`
-  //     : verseMode === "slide"
-  //     ? `/chapters/${chapter.slug}/verses/1`
-  //     : `/chapters/${chapter.slug}`;
+  const link =
+    verseMode === "scroll"
+      ? `/chapters/${chapter.slug}`
+      : verseMode === "slide"
+      ? `/chapters/${chapter.slug}/verses/1`
+      : `/chapters/${chapter.slug}`;
 
-  const link = `/chapters/${chapter.slug}`;
+  // const link = `/chapters/${chapter.slug}`;
 
   return (
     <div className={styles.item}>
