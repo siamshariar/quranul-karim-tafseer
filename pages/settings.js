@@ -17,7 +17,7 @@ export default function SettingsPage() {
         type="website"
       />
 
-      {/* <HeaderMobile /> */}
+      <HeaderMobile />
 
       <main id="viewport" className="viewport viewport_no_footer">
         <div className="settings_page">

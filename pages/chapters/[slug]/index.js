@@ -56,7 +56,6 @@ export default function Chapter({
 
             <HeaderWeb
               page="surah"
-              chapters={chapters}
               // isChapterPage={true}
               // searchModalController={searchModalController}
             />
