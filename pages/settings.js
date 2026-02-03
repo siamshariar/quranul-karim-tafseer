@@ -3,7 +3,7 @@ import SettingsContextProvider from "../contexts/SettingsContext";
 import SettingsContent from "../components/settings";
 import Meta from "../components/core/meta";
 //import Viewport from '../components/core/viewport'
-// import HeaderMobile from "../components/mobile/header-settings";
+import HeaderMobile from "../components/mobile/header-settings";
 // import FooterMobile from '../components/mobile/footer-home'
 
 export default function SettingsPage() {
